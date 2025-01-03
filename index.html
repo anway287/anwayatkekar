@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anway Atkekar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.8s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Anway Atkekar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+		 <div class="slider-item ">
+			<div class="overlay"></div>
+		   <div class="container">
+			<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/yoo.png);">
+				 <div class="overlay"></div>
+				</div>
+
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello World!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Software Engineer</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+    'Computer Science Student  ',
+    'Innovative Problem Solver  ',
+    'Passionate Coder  ',
+    'Tech Enthusiast  ',
+    'Continuous Learner  ',
+    'Efficiency Seeker  ',
+    'Scalable Solutions Creator  ',
+    'Performance Optimizer  ',
+    'Collaborative Developer  ',
+    'Creative Technologist  ',
+    'Future-Focused Engineer  ',
+    'Tech Trailblazer  ',
+];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Anway Atkekar </h2>
+						<h2>Masters in Computer Science </h2>
+			            <h2>Graduating May 2025 </h2>
+
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+						<p><a href="linkedin.com/in/anway-atkekar" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="file:///Users/anwayatkekar/Downloads/Resume__Anway__SDE%20(70).pdf" class="btn btn-white btn-outline-white py-3 px-4">Resume</a></p>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about--me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Anway Atkekar</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Software Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 years</span></p>
+										<p><span class="title-s">Address: </span> <span>New York, NY</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								  <div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Cloud Computing (AWS, GCP, Azure)</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Structures & Algorithms</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Distributed Systems</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>DevOps & CI/CD</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Microservices Architecture</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning & AI</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Containerization (Docker, Kubernetes)</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With 3 years of experience in software engineering, I bring a strong foundation in computer science, with a Master’s degree graduating in May 2025. I specialize in developing scalable, high-performance solutions using modern programming languages and frameworks, with a proven ability to deliver impactful projects in agile environments.
+                                   Proficient in Java, Python, C++, and frameworks like React.js, Spring Boot, and TensorFlow, I have expertise in end-to-end software development, from designing robust REST APIs to automating testing pipelines. My work has contributed to improved efficiency, reduced testing time, and increased customer satisfaction, including leading successful deployments with a 99% system uptime.
+                                   With a passion for problem-solving, system design, and leveraging cutting-edge technologies, I am well-equipped to contribute to the innovative and dynamic engineering teams at leading tech companies.</p>
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><span>Profile:</span> <span>Software Engineering & Development</span></li>
+										<li class="d-flex"><span>Domain:</span> <span>Big Data, Cloud Computing, Web Development, & Automation</span></li>
+										<li class="d-flex"><span>Education:</span> <span>Master of Science in Computer Science</span></li>
+										<li class="d-flex"><span>Languages:</span> <span>Java, Python, C++, JavaScript, TypeScript, SQL</span></li>
+										<li class="d-flex"><span>Frameworks & Libraries:</span> <span>React.js, Node.js, Spring Boot, TensorFlow</span></li>
+										<li class="d-flex"><span>Technologies:</span> <span>CI/CD, Docker, Kubernetes, AWS, Azure</span></li>
+										<li class="d-flex"><span>Tools:</span> <span>Git, Selenium, Power BI, Tableau</span></li>
+										<li class="d-flex"><span>Skills:</span> <span>System Design, Automation, Cloud Infrastructure, Data Analysis</span></li>
+										<li class="d-flex"><span>Interests:</span> <span>Hackathons, Competitive Programming, Leadership Development</span></li>
+									</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									
+								</p>
+								<p><a href="https://www.github.com/anway287" class="btn btn-primary py-3 px-3">Github</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Experienced Software Engineer with 3+ years of expertise in developing and deploying scalable solutions, automating testing processes, and optimizing cloud infrastructure. Proven skills in full-stack development, CI/CD pipelines, machine learning, and Agile methodologies.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2024-August 2024</span>
+						<h2>Software QA Intern</h2>
+            <span class="position">Oigetit.ai, Los Gatos, CA</span>
+            
+                <ul>
+                    <li>Implemented a robust web automation and performance testing framework from scratch utilizing Selenium, Python, and Golang, automating 80% of regression tests, reducing manual testing efforts by 50%.</li>
+                    <li>Developed 150+ automated test scripts in Java and C++, enhancing software quality and reducing testing time by 30%.</li>
+                    <li>Integrated AWS and Azure for efficient CI/CD pipelines, using JSON for configuration management.</li>
+                    <li>Built an automated reporting system with HTML, JavaScript, and CSS, leveraging Backbone.js for interactive UI components to deliver daily test result reports.</li>
+                </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">August 2021 - July 2023</span>
+						<h2>Software Engineer</h2>
+						<span class="position">Vodafone, Pune, India</span>
+						<ul>
+							<li>Led the development of new features for the EECC Project within an agile environment, utilizing Angular, Backbone.js for front-end development, and C#, Node.js, Ruby for back-end, resulting in a 15% increase in sales.</li>
+							<li>Implemented a Rust-based Semi Automated Bar/Unbar project, optimizing queries and transitioning to flexible cloud solutions using Azure DevOps methodology, deployed using Google Cloud Platform.</li>
+							<li>Led 4 successful deployments with 99% system uptime, achieving a 98% client satisfaction rating for reliability and performance.</li>
+							<li>Utilized Python to streamline data workflows for the Cavendish project, improving overall efficiency by 20%.</li>
+							<li>Collaborated with team members using version control systems (Git) to organize modifications and assign tasks.</li>
+							<li>Underwent training in designing distributed systems, optimizing cloud infrastructure, and automating CI/CD pipelines using Terraform, Jenkins, and Spring frameworks for scalable back-end solutions.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+					<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">September 2020 - November 2020</span>
+						<h2>KPMG</h2>
+            <span class="position">Pune, India</span>
+            
+                <ul>
+                    <li>Created Python data pipelines that integrated SQL and NoSQL databases, boosting data accessibility by 33%.</li>
+                    <li>Used Tableau to track key performance indicators and monitor data accuracy, resulting in a 10% increase in efficiency.</li>
+                    <li>Generated comprehensive reports in Power BI, summarizing key insights and KPIs for effective decision-making.</li>
+                </ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"> August 2023 - May 2025</span>
+    					<h2>Masters of Science in Computer Science</h2>
+    					<span class="position">Binghamton University, New York</span>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">August 2017 - July 2021</span>
+    					<h2>Bachelors of Engineering in Electronics and Telecommunications</h2>
+    					<span class="position">Pune Institute of Computer Technology</span>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/anway287/Meme-Generator" class="block-20 zoom-effect" style="background-image: url('images/cat.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Meme Generator</a></h3>
+                <p>Designed and developed a dynamic Meme Generator using HTML, CSS, and JavaScript, delivering seamless user interactivity and real-time customization.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/anway287/weather-dashboard" class="block-20 zoom-effect" style="background-image: url('images/weather.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/anway287/weather-dashboard">Weather Dashboard</a></h3>
+                <p>Developed a Weather Dashboard with React.js and TypeScript, integrating real-time weather data via REST API,
+					reducing processing time by 35% with Python, using FastAPI for backend services to ensure efficient data retrieval</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/anway287/Hyatt-Hotels--Data-Analysis/blob/main/Hyatt%20Hotels.pdf" class="block-20 zoom-effect" style="background-image: url('images/hyatt.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/anway287/Hyatt-Hotels--Data-Analysis/blob/main/Hyatt%20Hotels.pdf">Data Analysis - Hyatt Hotels</a></h3>
+                <p>Extracted and transformed a 1.7M-record customer dataset in R to calculate NPS, performed sentiment analysis using
+					SVM and association rules, and visualized findings with ggplot and Correlogram libraries in RStudio..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/anway287/Anime-Popularity-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/anime.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/anway287/Anime-Popularity-Dashboard">Social Media Anime Popularity</a></h3>
+				  <p>Built an interactive dashboard analyzing anime popularity trends using Reddit and MyAnimeList crawlers, leveraging
+					APIs, web scraping, and NLP tools for engagement, sentiment, and toxicity analyses.
+					Designed real-time visualizations with Plotly and Dash, using MySQL and Flask for efficient data management..</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="0">0</strong>
+                <span>Production Servers Accidentally Crashed</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="42">0</strong>
+                <span>Late-night code marathons</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Feature Ideas Sketched on Napkins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="50">0</strong>
+                <span>Tabs Opened While Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>New York City, New York</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+1 607-296-8341</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">aatkekar@binghamton.edu</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="file:///Users/anwayatkekar/Downloads/Resume__Anway__SDE%20(70).pdf">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h3>Have a<span> Question? Don't hesitate to reach out! </span> <a href="https://docs.google.com/forms/d/1wTQi9pVC_i2Zt3uRGXZfYUUodI4UjvRtTSUSZ6haN9g/edit" class="btn btn-primary py-3 px-5">Click Here</a> </h3>
+				</div>
+			</div>
+				
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
