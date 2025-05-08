@@ -135,68 +135,37 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
+	 <section id="home-section" class="hero">
   <div class="home-slider owl-carousel">
     <div class="slider-item">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row d-md-flex no-gutters align-items-center">
-          <!-- Left: Text -->
-          <div class="col-md-6 d-flex align-items-center ftco-animate">
+        <div class="row d-flex align-items-center">
+          
+          <!-- Left: Intro Text -->
+          <div class="col-md-7 ftco-animate">
             <div class="text">
               <span class="subheading">Hello World!</span>
               <h1 class="mb-4 mt-3">I'm <span>Software Engineer</span></h1>
+              <h3><strong>Innovative Problem Solver</strong></h3>
 
-              <!-- Typing animation -->
-              <span id="typing-animation"></span>
-
-              <script>
-                const typingAnimationElement = document.getElementById('typing-animation');
-                const typingTexts = [
-                  'Computer Science Student  ',
-                  'Innovative Problem Solver  ',
-                  'Passionate Coder  ',
-                  'Tech Enthusiast  ',
-                  'Continuous Learner  ',
-                  'Efficiency Seeker  ',
-                  'Scalable Solutions Creator  ',
-                  'Performance Optimizer  ',
-                  'Collaborative Developer  ',
-                  'Creative Technologist  ',
-                  'Future-Focused Engineer  ',
-                  'Tech Trailblazer  ',
-                ];
-
-                function playTypingAnimation(text) {
-                  for (let i = 0; i < text.length; i++) {
-                    setTimeout(() => {
-                      typingAnimationElement.textContent += text[i];
-                    }, i * 200);
-                  }
-                  setTimeout(() => {
-                    typingAnimationElement.textContent = '';
-                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                  }, text.length * 200);
-                }
-
-                playTypingAnimation(typingTexts[0]);
-              </script>
-
-              <br><br>
+              <br>
               <h2>Anway Atkekar</h2>
               <h2>Masters in Computer Science</h2>
               <h2>Graduating May 2025</h2>
 
               <p>
-                <a href="https://linkedin.com/in/anway-atkekar" class="btn btn-primary py-3 px-4">LinkedIn</a>
-                <a href="https://drive.google.com/file/d/1PHgWiWK86scR06L47hhTWx_8Y27GH5Es/view?usp=sharing" class="btn btn-secondary py-3 px-4">Resume</a>
+                <a href="https://linkedin.com/in/anway-atkekar" class="btn btn-warning py-2 px-4" style="border-radius: 25px;">LINKEDIN</a>
+                <a href="https://drive.google.com/file/d/1PHgWiWK86scR06L47hhTWx_8Y27GH5Es/view?usp=sharing" class="btn btn-success py-2 px-4" style="border-radius: 25px;">RESUME</a>
               </p>
             </div>
           </div>
 
-          <!-- Right: Round Image -->
-          <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <img src="images/round-profile.png" alt="Anway Atkekar" class="img-fluid rounded-circle shadow" style="width: 250px; height: 250px; object-fit: cover; border: 4px solid #fff;">
+          <!-- Right: Round Profile Image -->
+          <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <div style="width: 250px; height: 250px; border-radius: 50%; overflow: hidden; border: 4px solid white; box-shadow: 0 0 10px rgba(255,255,255,0.3);">
+              <img src="images/bg.jpeg" alt="Anway Atkekar" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
           </div>
         </div>
       </div>
