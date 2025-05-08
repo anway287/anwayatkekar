@@ -136,83 +136,73 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-		 <div class="slider-item ">
-			<div class="overlay"></div>
-		   <div class="container">
-			<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg.jpeg);"> 
-				 <div class="overlay"></div>
-				</div>
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters align-items-center">
+          <!-- Left: Text -->
+          <div class="col-md-6 d-flex align-items-center ftco-animate">
+            <div class="text">
+              <span class="subheading">Hello World!</span>
+              <h1 class="mb-4 mt-3">I'm <span>Software Engineer</span></h1>
 
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello World!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Software Engineer</span></h1>
+              <!-- Typing animation -->
+              <span id="typing-animation"></span>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+              <script>
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = [
+                  'Computer Science Student  ',
+                  'Innovative Problem Solver  ',
+                  'Passionate Coder  ',
+                  'Tech Enthusiast  ',
+                  'Continuous Learner  ',
+                  'Efficiency Seeker  ',
+                  'Scalable Solutions Creator  ',
+                  'Performance Optimizer  ',
+                  'Collaborative Developer  ',
+                  'Creative Technologist  ',
+                  'Future-Focused Engineer  ',
+                  'Tech Trailblazer  ',
+                ];
 
-						<script>
+                function playTypingAnimation(text) {
+                  for (let i = 0; i < text.length; i++) {
+                    setTimeout(() => {
+                      typingAnimationElement.textContent += text[i];
+                    }, i * 200);
+                  }
+                  setTimeout(() => {
+                    typingAnimationElement.textContent = '';
+                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                  }, text.length * 200);
+                }
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                playTypingAnimation(typingTexts[0]);
+              </script>
 
-						// Create an array of typing text
-						const typingTexts = [
-    'Computer Science Student  ',
-    'Innovative Problem Solver  ',
-    'Passionate Coder  ',
-    'Tech Enthusiast  ',
-    'Continuous Learner  ',
-    'Efficiency Seeker  ',
-    'Scalable Solutions Creator  ',
-    'Performance Optimizer  ',
-    'Collaborative Developer  ',
-    'Creative Technologist  ',
-    'Future-Focused Engineer  ',
-    'Tech Trailblazer  ',
-];
+              <br><br>
+              <h2>Anway Atkekar</h2>
+              <h2>Masters in Computer Science</h2>
+              <h2>Graduating May 2025</h2>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+              <p>
+                <a href="https://linkedin.com/in/anway-atkekar" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1PHgWiWK86scR06L47hhTWx_8Y27GH5Es/view?usp=sharing" class="btn btn-secondary py-3 px-4">Resume</a>
+              </p>
+            </div>
+          </div>
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Anway Atkekar </h2>
-						<h2>Masters in Computer Science </h2>
-			            <h2>Graduating May 2025 </h2>
-
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-						<p><a href="https://linkedin.com/in/anway-atkekar" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://drive.google.com/file/d/1PHgWiWK86scR06L47hhTWx_8Y27GH5Es/view?usp=sharing">Resume</a></p>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
+          <!-- Right: Round Image -->
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <img src="images/round-profile.png" alt="Anway Atkekar" class="img-fluid rounded-circle shadow" style="width: 250px; height: 250px; object-fit: cover; border: 4px solid #fff;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
